@@ -2,7 +2,7 @@
     {% cycle 'add row' : '<div class="row">', '', '' %}
         <div class="column column-33">
             <div class="preview-panel">
-                <a href="{{ post.url | prepend: site.baseurl }}">
+                <a href="{{ post.url | absolute_url }}">
                     <img src="{{ post.preview }}">
                 </a>
                 <div class="post-title">{{ post.title }}</div>
